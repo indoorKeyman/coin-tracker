@@ -36,26 +36,32 @@ const Card = styled(motion.div)`
   border-radius: 12px;
   box-shadow: 4px 4px 4px ${(props) => props.theme.boxShadow};
   cursor: pointer;
+  color: ${(props) => props.theme.coinName};
+  &:hover {
+    background-color: ${(props) => props.theme.coinName};
+    color: ${(props) => props.theme.cardColor};
+    border: solid 2px ${(props) => props.theme.cardColor};
+  }
+  transition: 0.6s ease;
 `;
 
 const CoinRank = styled.div`
   font-size: 24px;
-  color: ${(props) => props.theme.coinName};
+  /* color: ${(props) => props.theme.coinName}; */
 `;
 
 const CoinMark = styled.img`
-  color: ${(props) => props.theme.coinName};
   width: 44px;
 `;
 
 const CoinSymbol = styled.div`
   font-size: 20px;
-  color: ${(props) => props.theme.coinName};
+  /* color: ${(props) => props.theme.coinName}; */
 `;
 
 const CoinName = styled.div`
   font-size: 24px;
-  color: ${(props) => props.theme.coinName};
+  /* color: ${(props) => props.theme.coinName}; */
 `;
 
 function Home() {

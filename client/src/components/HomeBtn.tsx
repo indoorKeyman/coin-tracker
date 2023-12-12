@@ -21,6 +21,7 @@ const Gohome = styled.div`
   &:hover {
     background-color: ${(props) => props.theme.coinName};
     color: ${(props) => props.theme.cardColor};
+    border: solid 2px ${(props) => props.theme.cardColor};
   }
   transition: 0.4s;
 `;
